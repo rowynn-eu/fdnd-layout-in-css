@@ -1,18 +1,43 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="nl">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Basic Layout 2</title>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../style.css" />
     <style>
       /* Doe hier jouw ding! */
+      body {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        margin: 1em;
+      }
+
+      header {
+        height: 10vh;
+        padding: 1em;
+      }
+
+      nav {
+        height: 5vh;
+        padding: 1em;
+      }
+
+      main {
+        height: 70vh;
+        padding: 1em;
+      }
+      footer {
+        height: 15vh;
+        padding: 1em;
+      }
     </style>
   </head>
   <body id="basic-layout-2">
     <header><h1>Basic Layout 2</h1></header>
     <nav><a href="../index.html">Terug naar het overzicht</a></nav>
-    <main></main>
-    <footer></footer>
+    <main><p>meow</p></main>
+    <footer><p>woof</p></footer>
   </body>
 </html>
