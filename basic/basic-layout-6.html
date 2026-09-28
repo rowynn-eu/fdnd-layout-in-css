@@ -1,12 +1,40 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="nl">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Basic Layout 6</title>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../style.css" />
     <style>
       /* Doe hier jouw ding! */
+      body {
+        display: grid;
+        grid-template: 1fr 6fr / 1fr 2fr 1fr;
+        grid-template-areas:
+          "header header footer"
+          "nav main footer";
+        gap: 1em;
+      }
+
+      header {
+        grid-area: header;
+      }
+      nav {
+        grid-area: nav;
+      }
+      main {
+        grid-area: main;
+      }
+      footer {
+        grid-area: footer;
+      }
+
+      header,
+      nav,
+      main,
+      footer {
+        padding: 1em;
+      }
     </style>
   </head>
   <body id="basic-layout-6">
